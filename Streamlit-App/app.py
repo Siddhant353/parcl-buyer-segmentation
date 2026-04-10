@@ -1,3 +1,4 @@
+from pathlib import Path
 import pandas as pd
 import streamlit as st
 import matplotlib.pyplot as plt
@@ -7,10 +8,12 @@ st.set_page_config(page_title="Buyer Segmentation Dashboard", layout="wide")
 # -----------------------------
 # Data Loading
 # -----------------------------
-@st.cache_data
+BASE_DIR = Path(__file__).resolve().parent.parent
+DATA_FILE = BASE_DIR / "Data-processed" / "clients_clustered_named.csv"
 
+@st.cache_data
 def load_data():
-    df = pd.read_csv("../Data-processed/clients_clustered_named.csv")
+    df = pd.read_csv(DATA_FILE)
     return df
 
 
