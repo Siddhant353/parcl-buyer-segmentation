@@ -1,0 +1,5 @@
+cluster,cluster_name,client_count,avg_age,avg_satisfaction,avg_sold_property_count,avg_sale_price,avg_floor_area_sqft,cluster_pct
+3,Satisfied Value-Oriented Buyers,750,55.78,4.06,3.59,307089.99,1022.2,37.5
+0,Premium Large-Property Buyers,622,55.26,3.08,3.42,427988.47,1402.26,31.1
+2,Dissatisfied Mid-Value Buyers,541,54.94,1.45,3.57,311577.8,1034.06,27.05
+1,Older Multi-Property Buyers,87,66.43,3.62,6.34,334367.82,1111.14,4.35
